@@ -1,0 +1,7 @@
+Notes :
+#We can use "mix-blend-mode" to blend any color with our image.
+such as : mix-blend-mode: luminosity;
+
+#We can use "filter" to apply any filter
+on our images with the there opacity written in % in the brackets.
+such as : filter: grayscale(60%);
