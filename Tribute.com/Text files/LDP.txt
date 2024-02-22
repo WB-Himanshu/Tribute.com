@@ -5,3 +5,65 @@ such as : mix-blend-mode: luminosity;
 #We can use "filter" to apply any filter
 on our images with the there opacity written in % in the brackets.
 such as : filter: grayscale(60%);
+
+#What is the purpose of font face?
+@font-face is a CSS rule that allows you to input your own font to appear on a website even when the particular font is not installed on the visitor's computer.
+such as :
+/* @font-face {
+    font-family: serif;
+    src: url(./Fonts/Inika/Inika-Regular.ttf);
+} */
+
+Basically it allows us to reduce our website dependecy on the websafe fonts.(The fonts 
+which are present on all the operating system).
+
+#What is the difference between CDN & Font face .?
+While using a font CDN uses a font from an online source , while font face install 
+the font in the files of a website ,so it wont depend on the online or offline soucrce 
+for font , the website carries the font files in itself.
+
+Second thing we can create our custom fonts and use with font face , while in the CDN 
+we use only fixed fonts created by the online library.
+
+#Why position static element are some time invisible to us .?
+Because they are being created with the noraml flow of elements in the page 
+and they do not adapt any positiong css or styling given to them.
+
+#some important points about position:relative
+An element set to relative is positioned relative to its normal position. A relative setting without other positioning attributes added (top, left, bottom, or right), will not be affected. This is because it’s relative to itself exactly as if you left it as static. Setting the top, right, bottom, and left properties of a relative element will move it away from its normal position. Other content won't adjust to fit into any gap left by the element.
+An element with relative positioning can overlap other elements without affecting their position or interrupting the normal document flow.
+Two other things happen when you use relative position on an element:
+It introduces the use of z-index on that element. This doesn’t work with static elements. Even if you don’t set a z-index value, this element will still appear on top of any other static element it overlaps. Z-index is available for any element not set to static. 
+It limits absolutely positioned child elements. Any element that is a child of a relative element, or any position other than static, can be absolutely positioned within that element. 
+
+Note: If any element is defined in non-static then it will search its non-static 
+parent and position itslef accordingly , if it wont find any non-static element in its direct or indirect relation then it will positon itslef according to the Browser window
+i.e. body or HTML.
+
+
+#Z-index in positioning.?
+Any element which is non-static(fixed,sticky,absolute & relative) in position will
+always have more z-index value then the elements  which are static(default) in position.
+In case if both the elements are having same z-index ,then the last clreated element
+will render above.
+
+#what is linear gradient.?
+In a linear gradient, the colors flow in a single direction, for example from left to right, top to bottom, or any angle you choose. A linear gradient with two color stops.
+
+It is also used for transition of colors smoothly.
+
+#Why we cannot write heading tag inside paragraph tag.?
+
+In HTML, the <p> tag is used to denote a paragraph, and it can only contain inline elements. On the other hand, heading tags (<h1>, <h2>, etc.) are block-level elements. Block-level elements represent a section of the document with a block of content, like a paragraph or a heading, and they typically start on a new line and stretch out to the full width of their container.
+
+Because of these differences, block-level elements cannot be placed inside inline elements, which includes placing heading tags inside paragraph tags1. This is part of the HTML specification and helps ensure that the structure of the document is logical and predictable.
+
+If you want to include a heading and a paragraph together, you can do so by closing the tags before starting a new one. For example:
+
+HTML
+
+<div>
+  <h1>Main heading</h1>
+  <p>Some information or a quote</p>
+</div>
+In this example, the <div> tag is used to group the heading and the paragraph together, but each is still a separate element. This is a more semantically correct way to structure your HTML. It’s important to note that while some browsers might still render your HTML correctly if you put a block-level element inside an inline element, it’s not guaranteed, and it could lead to unexpected results or errors.
