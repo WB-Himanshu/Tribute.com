@@ -218,4 +218,38 @@ a{
     font-size: 12px;
     text-align: center;
  }
+
+ @font-face {
+    font-family: MS Gothic;
+    src: url(./Fonts/MS\ Gothic.ttf);
+ }
+ .death_page{
+    height: 700px;
+    width: 1323px;
+    position: relative;
+    top: 130px;
+    left: 10px;
+ }
  
+ .Death_image {
+    height: 600px;
+    width: 1323px;
+ }
+
+ .death_note{
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    width: 350px;
+ }
+
+ .death_note h1{
+    color: white;
+    font-family: MS Gothic;
+ }
+
+ .death_note p{
+    color: white;
+    font-family: MS Gothic;
+    font-size: 15px;
+ }

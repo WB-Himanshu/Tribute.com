@@ -67,3 +67,23 @@ HTML
   <p>Some information or a quote</p>
 </div>
 In this example, the <div> tag is used to group the heading and the paragraph together, but each is still a separate element. This is a more semantically correct way to structure your HTML. It’s important to note that while some browsers might still render your HTML correctly if you put a block-level element inside an inline element, it’s not guaranteed, and it could lead to unexpected results or errors.
+
+
+#What is the use of the bread crumbs and sticky roll in vs code .?
+
+In Visual Studio Code (VS Code), "sticky scroll" is a feature that helps you keep track of your location in the code as you scroll¹². As you scroll through your code, sections such as class definitions or method definitions stick at the top, providing context to where you are in the code¹.
+
+Here's how you can enable and use sticky scroll in VS Code:
+
+1. **Enable Sticky Scroll**: Open your VS Code settings and search for "sticky". Ensure `Editor › Experimental › Sticky Scroll` is enabled¹.
+
+2. **Use Sticky Scroll**: As you scroll through your code, you'll notice that the class/interface/namespace/function/method/constructor that the top of the editor is in will stick at the top, helping you know your location within a document².
+
+As for breadcrumbs, they are a navigation feature that shows the current location and allows you to quickly navigate between symbols and files¹². They appear as a navigation bar above the contents of the editor².
+
+Here's how you can use breadcrumbs in VS Code:
+
+1. **Enable Breadcrumbs**: You can enable breadcrumbs by going to your settings and searching for "Breadcrumbs". If you choose not to use the fancy settings editor, you can manually add `"breadcrumbs.enabled": true` to your configuration¹. Alternatively, you can enable it with the `View > Toggle Breadcrumbs` command².
+
+2. **Interact with Breadcrumbs**: To interact with breadcrumbs, use the `Focus Breadcrumbs` command or press `SHIFT (⇧) + COMMAND (⌘) + PERIOD (.)` and use arrow keys to move around².
+
