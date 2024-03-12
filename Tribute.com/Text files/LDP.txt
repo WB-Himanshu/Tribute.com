@@ -87,3 +87,10 @@ Here's how you can use breadcrumbs in VS Code:
 
 2. **Interact with Breadcrumbs**: To interact with breadcrumbs, use the `Focus Breadcrumbs` command or press `SHIFT (⇧) + COMMAND (⌘) + PERIOD (.)` and use arrow keys to move around².
 
+#How To rotate an element in a web page.?
+We can do that by using transform:rotate(deg) Css property, in which we need to give
+value of angle in degree, at which we want to rotate our web element ,for clockwise will
+give positve value and for anti clockwise rotation we will negative values.
+
+Note: - Please give ID to your all the sections in the web page for enabling the 
+smooth scrolling in your web page.
