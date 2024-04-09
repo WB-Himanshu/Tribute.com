@@ -1,0 +1,130 @@
+Notes :
+#We can use "mix-blend-mode" to blend any color with our image.
+such as : mix-blend-mode: luminosity;
+
+#We can use "filter" to apply any filter
+on our images with the there opacity written in % in the brackets.
+such as : filter: grayscale(60%);
+
+#What is the purpose of font face?
+@font-face is a CSS rule that allows you to input your own font to appear on a website even when the particular font is not installed on the visitor's computer.
+such as :
+/* @font-face {
+    font-family: serif;
+    src: url(./Fonts/Inika/Inika-Regular.ttf);
+} */
+
+Basically it allows us to reduce our website dependecy on the websafe fonts.(The fonts 
+which are present on all the operating system).
+
+#What is the difference between CDN & Font face .?
+While using a font CDN uses a font from an online source , while font face install 
+the font in the files of a website ,so it wont depend on the online or offline soucrce 
+for font , the website carries the font files in itself.
+
+Second thing we can create our custom fonts and use with font face , while in the CDN 
+we use only fixed fonts created by the online library.
+
+#Why position static element are some time invisible to us .?
+Because they are being created with the noraml flow of elements in the page 
+and they do not adapt any positiong css or styling given to them.
+
+#some important points about position:relative
+An element set to relative is positioned relative to its normal position. A relative setting without other positioning attributes added (top, left, bottom, or right), will not be affected. This is because it’s relative to itself exactly as if you left it as static. Setting the top, right, bottom, and left properties of a relative element will move it away from its normal position. Other content won't adjust to fit into any gap left by the element.
+An element with relative positioning can overlap other elements without affecting their position or interrupting the normal document flow.
+Two other things happen when you use relative position on an element:
+It introduces the use of z-index on that element. This doesn’t work with static elements. Even if you don’t set a z-index value, this element will still appear on top of any other static element it overlaps. Z-index is available for any element not set to static. 
+It limits absolutely positioned child elements. Any element that is a child of a relative element, or any position other than static, can be absolutely positioned within that element. 
+
+Note: If any element is defined in non-static then it will search its non-static 
+parent and position itslef accordingly , if it wont find any non-static element in its direct or indirect relation then it will positon itslef according to the Browser window
+i.e. body or HTML.
+
+
+#Z-index in positioning.?
+Any element which is non-static(fixed,sticky,absolute & relative) in position will
+always have more z-index value then the elements  which are static(default) in position.
+In case if both the elements are having same z-index ,then the last clreated element
+will render above.
+
+#what is linear gradient.?
+In a linear gradient, the colors flow in a single direction, for example from left to right, top to bottom, or any angle you choose. A linear gradient with two color stops.
+
+It is also used for transition of colors smoothly.
+
+#Why we cannot write heading tag inside paragraph tag.?
+
+In HTML, the <p> tag is used to denote a paragraph, and it can only contain inline elements. On the other hand, heading tags (<h1>, <h2>, etc.) are block-level elements. Block-level elements represent a section of the document with a block of content, like a paragraph or a heading, and they typically start on a new line and stretch out to the full width of their container.
+
+Because of these differences, block-level elements cannot be placed inside inline elements, which includes placing heading tags inside paragraph tags1. This is part of the HTML specification and helps ensure that the structure of the document is logical and predictable.
+
+If you want to include a heading and a paragraph together, you can do so by closing the tags before starting a new one. For example:
+
+HTML
+
+<div>
+  <h1>Main heading</h1>
+  <p>Some information or a quote</p>
+</div>
+In this example, the <div> tag is used to group the heading and the paragraph together, but each is still a separate element. This is a more semantically correct way to structure your HTML. It’s important to note that while some browsers might still render your HTML correctly if you put a block-level element inside an inline element, it’s not guaranteed, and it could lead to unexpected results or errors.
+
+
+#What is the use of the bread crumbs and sticky roll in vs code .?
+
+In Visual Studio Code (VS Code), "sticky scroll" is a feature that helps you keep track of your location in the code as you scroll¹². As you scroll through your code, sections such as class definitions or method definitions stick at the top, providing context to where you are in the code¹.
+
+Here's how you can enable and use sticky scroll in VS Code:
+
+1. **Enable Sticky Scroll**: Open your VS Code settings and search for "sticky". Ensure `Editor › Experimental › Sticky Scroll` is enabled¹.
+
+2. **Use Sticky Scroll**: As you scroll through your code, you'll notice that the class/interface/namespace/function/method/constructor that the top of the editor is in will stick at the top, helping you know your location within a document².
+
+As for breadcrumbs, they are a navigation feature that shows the current location and allows you to quickly navigate between symbols and files¹². They appear as a navigation bar above the contents of the editor².
+
+Here's how you can use breadcrumbs in VS Code:
+
+1. **Enable Breadcrumbs**: You can enable breadcrumbs by going to your settings and searching for "Breadcrumbs". If you choose not to use the fancy settings editor, you can manually add `"breadcrumbs.enabled": true` to your configuration¹. Alternatively, you can enable it with the `View > Toggle Breadcrumbs` command².
+
+2. **Interact with Breadcrumbs**: To interact with breadcrumbs, use the `Focus Breadcrumbs` command or press `SHIFT (⇧) + COMMAND (⌘) + PERIOD (.)` and use arrow keys to move around².
+
+#How To rotate an element in a web page.?
+We can do that by using transform:rotate(deg) Css property, in which we need to give
+value of angle in degree, at which we want to rotate our web element ,for clockwise will
+give positve value and for anti clockwise rotation we will negative values.
+
+Note: - Please give ID to your all the sections in the web page for enabling the 
+smooth scrolling in your web page.
+
+#How to add media queries in the head tag.?
+<link rel="stylesheet" media="screen and (max-width:1315px)" href="./Phone.css">
+In the above code we are telling our web browser to activate "phone.css" file 
+when the media on which our website is displayed is screen media,and the width 
+of the device will be between 0 to 1315px.
+
+#What is the standard screen size for a 2D website?
+The most common screen resolutions in 2023 are
+1920×1080 for desktops, 360×800 for mobiles, and 768×1024 for tablets. 
+
+Note: When we position any block elements together,they do not adjust there width,they will 
+always take full width of the viewport.its just they are overlapped on each other.
+
+Note: always try to use class instead of ID because of industry standards.
+
+Note:- Sometimes the Toggle device tool(a button to enable and disable reponsive mode)
+will not work properly so we need to click again and again till our website is rendered 
+properly.
+
+#Why does Horizontal bar appear.?
+It will generally happen due to two reasons:- 
+1.May be some of the web elements in the webpage are of big size than the viewport.
+2.May  be you have any animation which is coming from outsidr the viewport.
+simply it means that the contents of the webpage is overflowing the size of the web page.
+
+Note: Try not to set the overflow property in the body as it may ends up in diactivating
+scrolling in our webiste.
+
+*************************Important note ***********************************************
+AVOID MAKING RESPONSIVE WEBSITES WITHOUT FLEXBOX OR GRID AS YOU MAY END UP IN WRITING CODES
+FOR EVERY 150PX RANGE OF SCREEN WIDTH AND CHANGING WIDTH ,HEIGHT, FONT SIZE,POSITION, PADDING
+MARGIN ETC . EVERYTIME "THAT WILL MAKR YOUR CSS CODE VERY COMPLEX".
+******************************************************************************************  
