@@ -94,3 +94,37 @@ give positve value and for anti clockwise rotation we will negative values.
 
 Note: - Please give ID to your all the sections in the web page for enabling the 
 smooth scrolling in your web page.
+
+#How to add media queries in the head tag.?
+<link rel="stylesheet" media="screen and (max-width:1315px)" href="./Phone.css">
+In the above code we are telling our web browser to activate "phone.css" file 
+when the media on which our website is displayed is screen media,and the width 
+of the device will be between 0 to 1315px.
+
+#What is the standard screen size for a 2D website?
+The most common screen resolutions in 2023 are
+1920×1080 for desktops, 360×800 for mobiles, and 768×1024 for tablets. 
+
+Note: When we position any block elements together,they do not adjust there width,they will 
+always take full width of the viewport.its just they are overlapped on each other.
+
+Note: always try to use class instead of ID because of industry standards.
+
+Note:- Sometimes the Toggle device tool(a button to enable and disable reponsive mode)
+will not work properly so we need to click again and again till our website is rendered 
+properly.
+
+#Why does Horizontal bar appear.?
+It will generally happen due to two reasons:- 
+1.May be some of the web elements in the webpage are of big size than the viewport.
+2.May  be you have any animation which is coming from outsidr the viewport.
+simply it means that the contents of the webpage is overflowing the size of the web page.
+
+Note: Try not to set the overflow property in the body as it may ends up in diactivating
+scrolling in our webiste.
+
+*************************Important note ***********************************************
+AVOID MAKING RESPONSIVE WEBSITES WITHOUT FLEXBOX OR GRID AS YOU MAY END UP IN WRITING CODES
+FOR EVERY 150PX RANGE OF SCREEN WIDTH AND CHANGING WIDTH ,HEIGHT, FONT SIZE,POSITION, PADDING
+MARGIN ETC . EVERYTIME "THAT WILL MAKR YOUR CSS CODE VERY COMPLEX".
+******************************************************************************************  
